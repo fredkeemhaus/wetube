@@ -1,0 +1,10 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "Cloning YouTube with Vanila JS and Node JS",
+  "main": "index.js",
+  "author": "Fred keem",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
