@@ -4,10 +4,15 @@
   "description": "Cloning YouTube with Vanila JS and Node JS",
   "author": "Fred keem",
   "dependencies": {
+    "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "express": "^4.16.4"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
