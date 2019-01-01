@@ -5,7 +5,7 @@ Cloning with VanilaJS and NodeJS
 # Pages:
 - [ ] Home
 - [ ] Join
-- [ ] Search
+- [x] Search
 - [ ] User Detail
 - [ ] Edit Profile
 - [ ] Change Password
