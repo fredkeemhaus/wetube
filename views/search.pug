@@ -5,9 +5,9 @@ block content
     .search__header
         h3 Searching for: #{searchingBy}
     .search__videos
-        each items in videos
+        each item in videos
             +videoBlock({
-                videoFile:items.videoFile,
-                title:items.title,
-                views:items.views,
+                videoFile:item.videoFile,
+                title:item.title,
+                views:item.views,
             })

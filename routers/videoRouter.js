@@ -1,8 +1,8 @@
 import express from "express";
 import routes from "../routes";
 import { 
-    postUpload,
     getUpload, 
+    postUpload,
     videoDetail, 
     editVideo, 
     deleteVideo 
