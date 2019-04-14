@@ -3,14 +3,10 @@ import morgan from 'morgan'
 import helmet from 'helmet'
 import cookieParser from 'cookie-parser'
 import bodyParser from 'body-parser'
+import { userRouter } from './router'
 
 const app = express()
 
-const PORT = 4000
-
-const handleListening = () => {
-  console.log(`✅Listenling on: http://localhost:${PORT}`)
-}
 const handleHome = (req, res) => {
   res.send('Hello from home')
 }
@@ -26,8 +22,6 @@ app.use(morgan('dev'))
 
 app.get('/', handleHome)
 app.get('/profile', handleProfile)
-// app.get
-// app.get
-// app.get
+app.use('/user', userRouter)
 
-app.listen(PORT, handleListening)
+export default app
